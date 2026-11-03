@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Projetos dos cursos da trilha Alura
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Desenvolvimento Front-end: React, TypeScript, Next.js e arquitetura de aplicações
 
-## Available Scripts
+Repositório destinado aos projetos práticos desenvolvidos durante os estudos de React e seu ecossistema na plataforma Alura.
 
-In the project directory, you can run:
+### 1 - Fundamentos do React e desenvolvimento com TypeScript
 
-### `npm start`
+- JavaScript: evoluindo a sua aplicação com ES6+
+- React: desenvolvendo com JavaScript
+- React: desenvolva aplicações tipadas e escaláveis com Typescript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2 - Gerenciamento de estados, navegação e integração com APIs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React: utilizando hooks para gerenciar estados
+- React: construindo SPAs com React router
+- React: consumindo APIs HTTP no seu projeto
 
-### `npm test`
+### 3 - Qualidade de código, automação e gerenciamento de dados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React: garantindo qualidade de código e automações de deploy
+- React Query: gerenciando HTTP State
+- React Query: manipulando interações com mutations
 
-### `npm run build`
+### 4 - Formulários, validação e estilização de componentes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React: eleve o nível de seus formulários com Zod e o React Hook Form
+- React: utilizando CSS Modules e Tailwind para estilização de componentes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5 - Desenvolvimento de aplicações com Next.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Next.js: conheça o framework React
+- React: explorando estratégias de renderização do Next.js
+- Next.js: implementando autenticação com Auth.js
 
-### `npm run eject`
+### 6 - Testes automatizados e otimização de performance
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React: realizando testes avançados com Jest e Testing Library
+- React: testes de integração e mocks no Front-end
+- React: otimizando a performance
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 7 - Arquitetura e escalabilidade no Front-end
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Arquitetura no front-end: estruturando aplicações com decisões técnicas sustentáveis
+- React: aplicando arquiteturas de Micro frontends
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 8 - Práticas complementares e DevOps
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Praticando JavaScript e CSS: animações de scroll em uma página web
+- DevOps: trabalhando com repositórios no GitHub
