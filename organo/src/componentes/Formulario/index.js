@@ -1,71 +1,65 @@
-import { useState } from 'react'
-import Botao from '../Botao'
-import CampoTexto from '../CampoTexto/CampoTexto'
-import ListaSuspensa from '../ListaSuspensa'
-import './Formulario.css'
+import { useState } from "react";
+import Botao from "../Botao";
+import CampoTexto from "../CampoTexto/CampoTexto";
+import ListaSuspensa from "../ListaSuspensa";
+import "./Formulario.css";
 
 const Formulario = (props) => {
+  const [nome, setNome] = useState("");
+  const [cargo, setCargo] = useState("");
+  const [imagem, setImagem] = useState("");
+  const [time, setTime] = useState("");
 
-    const times = [
-        'Programação',
-        'Front-end',
-        'Data-science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e gestão'
-    ]
+  const aoSalvar = (event) => {
+    event.preventDefault();
+    props.aoColaboradorCadastrado({
+      nome,
+      cargo,
+      imagem,
+      time,
+    });
+    setNome("");
+    setCargo("");
+    setImagem("");
+    setTime("");
+  };
 
-    const [nome, setNome ] = useState('')
-    const [cargo, setCargo ] = useState('')
-    const [imagem, setImagem ] = useState('')
-    const [time, setTime ] = useState('')
+  return (
+    <section className="formulario">
+      <form onSubmit={aoSalvar}>
+        <h2>Preencha os dados para criar o card do colaborador</h2>
+        <CampoTexto
+          obrigatorio={true}
+          label="Nome"
+          valor={nome}
+          placeholder="Digite seu nome"
+          aoAlterado={(valor) => setNome(valor)}
+        />
+        <CampoTexto
+          obrigatorio={true}
+          label="Cargo"
+          valor={cargo}
+          placeholder="Digite seu cargo"
+          aoAlterado={(valor) => setCargo(valor)}
+        />
+        <CampoTexto
+          obrigatorio={true}
+          label="Imagem"
+          valor={imagem}
+          placeholder="Digite o endereço da imagem"
+          aoAlterado={(valor) => setImagem(valor)}
+        />
+        <ListaSuspensa
+          obrigatorio={true}
+          label="Time"
+          itens={props.times}
+          valor={time}
+          aoAlterado={(valor) => setTime(valor)}
+        />
+        <Botao>Criar Card</Botao>
+      </form>
+    </section>
+  );
+};
 
-    const aoSalvar = (event) =>{
-        event.preventDefault()
-        props.aoColaboradorCadastrado({
-            nome,
-            cargo,
-            imagem,
-            time
-        })
-    }
-
-    return(
-        <section className="formulario">
-            <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados para criar o card do colaborador</h2>
-                <CampoTexto 
-                    obrigatorio={true} 
-                    label="Nome" 
-                    placeholder="Digite seu nome"
-                    aoAlterado= {valor => setNome(valor)}
-                />
-                <CampoTexto 
-                    obrigatorio={true} 
-                    label="Cargo" 
-                    placeholder="Digite seu cargo"
-                    aoAlterado= {valor => setCargo(valor)}
-                    />
-                <CampoTexto 
-                    obrigatorio={true} 
-                    label="Imagem" 
-                    placeholder="Digite o endereço da imagem"
-                    aoAlterado= {valor => setImagem(valor)}
-                    />
-                <ListaSuspensa 
-                    obrigatorio={true} 
-                    label="Time" 
-                    itens={times}
-                    valor={time}
-                    aoAlterado={valor => setTime(valor)}
-                />
-                <Botao>
-                    Criar Card
-                </Botao>
-            </form>
-        </section>
-    )
-}
-
-export default Formulario
+export default Formulario;
