@@ -1,12 +1,9 @@
-import styles from './Tag.module.css';
-import classNames from 'classnames';
-
-type Categoria =  "2D" | "3D"
-
-type Censura = "Livre" | "10 anos" | "12 anos" | "14 anos" | "16 anos";
+import type { Categoria, Censura } from "../../types";
+import styles from "./Tag.module.css";
+import classNames from "classnames";
 
 interface TagProps {
-    value: Categoria | Censura
+  value: Categoria | Censura;
 }
 
 const tagClasses = {
@@ -19,13 +16,10 @@ const tagClasses = {
   "3D": styles.tresD,
 };
 
+const Tag = ({ value }: TagProps) => {
+  const classes = classNames(styles.tag, tagClasses[value]);
 
-const Tag = ({value}: TagProps ) => {
-    const classes = classNames(styles.tag, tagClasses[value]);
+  return <span className={classes}>{value}</span>;
+};
 
-    return (
-        <span className={classes}>{value}</span>
-    )
-}
-
-export default Tag
+export default Tag;
