@@ -1,6 +1,5 @@
 import Banner from "./components/Banner";
 import bannerPrincipal from "../public/Assets Luz e Cena/Imagens/Banner principal/Banner principal desktop.png";
-import Link from "./components/Link";
 import Header from "./components/Header";
 import MovieSection from "./components/MovieSection";
 
